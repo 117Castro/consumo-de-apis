@@ -1,12 +1,13 @@
-Contenedor principal
+/* Contenedor principal */
 #listapokemon {
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     padding: 20px;
     justify-items: center;
     align-items: start;
-    /* border: 3px solid rgb(0, 200, 255); */
+    /* border: 3px solid red */
 }
 
 

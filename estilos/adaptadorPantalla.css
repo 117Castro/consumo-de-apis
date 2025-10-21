@@ -1,0 +1,71 @@
+/* css para adaptar la interfaz en multiples pantallas header"logo, titulo, encabezado"
+/body"cuenco y contenido mostrado en targetas" */
+
+.header{
+    background-color: #e3dede; 
+    text-align: center;
+    border-radius: 10px;
+
+
+    /* cajas flex de header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 8px;
+    flex-shrink: 0;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    
+}
+
+
+/* contenedor principal para almacdenar las targetas de contenido */
+#listaRick{
+    /* Grid para mantener posiciones  */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* con el minmax puedo regular el numero de tarjetas que se muestran*/
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    align-items: start;
+}
+
+
+
+/*  */
+.contenido{
+    border: 2px solid red;
+    
+    /* cajas flexibles grap */
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

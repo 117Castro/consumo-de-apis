@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos</title>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+    
+
+
+    <!-- cuadro de opciones para definir cual es el numero mas alto -->
+    <div class="numero-mayor" style="border: 2px solid black; padding: 5px; text-align: center;
+    max-width: auto;">
+        <p class="titulo">Pide tres números y muestra cuál es el mayor.</p>
+        <input class="txt" type="text" id="primerNumero">
+        <input class="txt" type="text" id="segundoNumero">
+        <input class="txt" type="text" id="tercerNumero">
+        <button type="button" id="btnNumero" onclick="numeroMayor()" >Mostrar</button>
+        <button type="button" id="clearbtn" onclick="clearNumero()" >Limpiar</button>
+
+        <p class="titulo" id="mostrarNumero">Numero mayor.</p>
+
+    </div>
+    
+    
+    <!-- cuadro de opciones usando cheques -->
+    <div class="numero-mayor" style="border: 2px solid black; padding: 5px; text-align: center;
+    max-width: auto;">
+        <p class="titulo">Elige tus opciones para realiozar el viaje</p>
+        <label class="chec"><input type="checkbox" id="onMony">Si hay dinero</label>
+        <label class="chec"><input type="checkbox" id="offMony">No hay dinero</label>
+        <p class="titulo" id="decc">El auto tiene gasolina</p>
+        <label class="chec"><input type="checkbox" id="gas">Si hay gasolina</label>
+        <label class="chec"><input type="checkbox" id="nogas">No hay gasolina</label> <br><br>
+        <button type="button" id="btnNumero" onclick="viaje()" >Mostrar</button>
+        <p class="titulo" id="decicion">Decision razonable...</p>
+
+    </div>
+    
+    
+    
+    <!-- opcion de menu usando switch con botones accion para reutilizar funciones  -->
+    <div class="numero-mayor" style="border: 2px solid black; padding: 5px; text-align: center;
+     width: 600px;">
+        <p class="titulo">Pagina de navegacion</p>
+
+        <button type="button" id="perfil" onclick="eleccion('perfil')">Perfil</button>
+        <button type="button" id="editPerfil" onclick="eleccion('editar perfil')">Editar perfil</button>
+        <button type="button" id="ClosePerfil" onclick="eleccion('close')">Cerrar cesion</button>
+        <button type="button" id="OtherOption" onclick="eleccion('otros')">Mas opcines de menu</button>
+        
+        <p class="titulo" id="showOpcion">Opcion de usuario</p>
+
+    </div>
+    
+    
+
+
+    <div class="numero-mayor" style="border: 2px solid black; padding: 5px; text-align: center;
+     width: 600px;">
+        <p class="titulo">Elija los productos a comprar </p>
+
+
+        <button type="button" id="" onclick="productosCotizar('tomate')">Tomate $0.35</button>
+        <button type="button" id="" onclick="productosCotizar('chile')">Chile $0.25</button>
+        <button type="button" id="" onclick="productosCotizar('sal')">Sal de mar $.40</button>
+        <button type="button" id="" onclick="productosCotizar('fresas')">Caja de Fresas $1.00</button>
+            
+         <br> <br>
+        <input type="text" id="productosIngresar" placeholder="Producto ingresado"> 
+        <input type="text" id="presioProducto" placeholder="Costo de producto"> 
+        <input type="text" id="cantidadingresada" placeholder="Cantidad ingresada"> <br><br>
+        <button type="button" id="product" onclick="eleccionProducto()">Cotizar</button> 
+        <button type="button" id="product" onclick="clearProduct()">Nuevo</button> 
+
+        <p class="titulo" id="cotizado">Opcion de usuario</p>
+
+    </div>
+
+
+
+
+
+    <script src="./documentosjs/fundamentos.js"></script>
+
+</body>
+</html>

@@ -8,6 +8,9 @@ let num2 =23;
 
 console.log (num * num2);
 
+
+
+
 console.log ("hola el numero es  ", `${(num + num * num2) * 0}`);
 
 
@@ -450,9 +453,29 @@ let estudiantes = [
         nota: 7 
     },
     {
-        nombre: "paoralonla",
-        apellido: "mantis",
-        nota: 4 
+        nombre: "robeto",
+        apellido: "delfin",
+        nota: 3.5
+    },
+    {
+        nombre: "lola",
+        apellido: "melares",
+        nota: 2 
+    },
+    {
+        nombre: "mario",
+        apellido: "malo",
+        nota: 9 
+    },
+    {
+        nombre: "marta",
+        apellido: "molai",
+        nota: 6 
+    },
+    {
+        nombre: "materio",
+        apellido: "loaba",
+        nota: 7 
     }
 
 
@@ -461,31 +484,76 @@ let estudiantes = [
 
 for(let i =0; i < estudiantes.length; i++){
     
-    if (estudiantes[i].nota %2 == 0){
+    if (estudiantes[i].nota >= 7){
         console.log(estudiantes[i].nombre, estudiantes[i].apellido, estudiantes[i].nota)
         
     }else{
-        console.log("no pasaron", estudiantes[i].nombre, estudiantes[i].apellido, estudiantes[i].nota)
+        console.log(estudiantes[i].nombre, estudiantes[i].apellido, estudiantes[i].nota, "no pasaron")
         // console.log("no pasaron");
     }
 }
 
 
 
-  const df = document.getElementById("text");
-
-    for(let i = 0; i <= 34; i++){
-
-        const item = document.createElement("li");
-        item.textContent = "prueba " + i +" texto";
-
-        df.appendChild(item);
-    }
 
 
+let bucleObgeto = {
+    nombre: "Carlos",
+    apellido: "Castro",
+    nota: 34 
+}
+
+let buclearrego = [ 10, 15, 23, "numeracion"]
 
 
-    
+/*uso del for of de bucle, asigna el objeto dentro de una variable abreviando y
+simplificando el codigo.
+let estudiante = estudiantes[i]; 
+*/
+
+// usando un arreglo
+// for( let deti of bucleObgeto){
+//     // console.log(estudiante.nombre, estudiante.apellido, `> Nota de estudiante: ${estudiante.nota} `, )
+//     console.log(deti);
+// }
+
+//  usando un obgeto
+for( let uso of buclearrego){
+    // console.log(estudiante.nombre, estudiante.apellido, `> Nota de estudiante: ${estudiante.nota} `, )
+    console.log(uso);
+}
+
+
+// usando un arreglo
+for( let llave in bucleObgeto){
+    console.log(`La llave del arreglo es ${llave}`, " y el item es ", bucleObgeto[llave]);
+}
+
+//  usando un obgeto
+for( let key in buclearrego){
+    // console.log(key);
+    console.log(`La llave del arreglo es ${key}`, " y el item es ", buclearrego[key]);
+}
+
+
+// nuevas prueas de codig
+//   const df = document.getElementById("text");
+
+//     for(let i = 0; i <= 34; i++){
+
+//         const item = document.createElement("li");
+//         item.textContent = "prueba " + i +" texto";
+
+//         df.appendChild(item);
+//     }
+
+
+
+
+
+
+
+
 
 
 
